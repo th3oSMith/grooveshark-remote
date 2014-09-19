@@ -31,6 +31,11 @@ func GrooveServer(ws *websocket.Conn) {
 			client = ws
 			cmd := [1]string{"connected"}
 			websocket.JSON.Send(client, cmd)
+		} else if arguments[0] == "ping" {
+			log.Println("Ping")
+			client = ws
+			cmd := [1]string{"pong"}
+			websocket.JSON.Send(client, cmd)
 		} else {
 			DoAction(arguments)
 		}
