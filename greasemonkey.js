@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name        Grooveshark Remote
-// @namespace   http://grooveshark.com/*
+// @namespace   http://github.com/th3osmith
+// @include     http://grooveshark.com/*
 // @description Remote control for grooveshark
 // @version     1
 // @grant       none
